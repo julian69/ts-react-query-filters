@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Button /> > should render correctly 1`] = `
+<DocumentFragment>
+  <button
+    class="rounded-lg bg-blue-600 text-white text-sm px-8 py-2 font-medium  outline-none hover:opacity-80 focus:ring" "
+    type="submit"
+  >
+    test
+  </button>
+</DocumentFragment>
+`;
