@@ -11,7 +11,7 @@ exports[`<Header /> > should render correctly 1`] = `
     >
       <img
         alt="hero"
-        src="/src/assets/logo.svg"
+        src="/ts-react-query-filters/src/assets/logo.svg"
         width="50"
       />
     </a>
