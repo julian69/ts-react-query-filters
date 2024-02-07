@@ -3,11 +3,11 @@ This is a very simple project I built to find out what react-query was about.
 
 ### Stack
 - React
-- React-router
-- React-query
 - TypeScript
+- React-query
 - Tailwing
-- vitest
+- Vite
+- Vitest
 - React testing library 
 - Cypress
 
@@ -37,7 +37,7 @@ $ npm run cy:withServer
 ```
 ### Link to the search results
 Once the app is running locally, you can use the following generic URL to access the corresponding results:
-[http://localhost:3000/?weight=&endDate=null&startDate=null&originAirportCode=FRA&destinationAirportCode=](http://localhost:3000/?name=graham&email=&company=&zipcode=)
+[Results URL](https://julian69.github.io/ts-react-query-filters/?name=gra&email=Sincere%40april.biz&company=Romaguera-Crona&zipcode=)
 
 ### Test reports
 You can find the tests reports in the reports folder. 
