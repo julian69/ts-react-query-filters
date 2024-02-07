@@ -7,3 +7,5 @@ export const filtersInitialState: IFilters = {
   [FILTERS.COMPANY]: '',
   [FILTERS.ZIPCODE]: '',
 };
+
+export const searchParams = new URLSearchParams(window.location.search);

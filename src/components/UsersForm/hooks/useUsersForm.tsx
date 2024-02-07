@@ -1,15 +1,12 @@
-import { useSearchParams } from 'react-router-dom';
 import { SyntheticEvent, useEffect, useState } from 'react';
 
 import { IFilters } from '@/types/users';
-import { deserializeUrl } from '../utils';
-import { filtersInitialState } from '../constants';
+import { deserializeUrl, setSearchParams } from '../utils';
+import { filtersInitialState, searchParams } from '../constants';
 import { useQueryClient } from '@tanstack/react-query';
 import { useQueryUsers, usersQueryKey } from '@/hooks/useQueryUsers';
 
 export const useUsersForm = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
-
   const urlFilters = deserializeUrl(searchParams);
   const defaultFilterValues = Object.values(urlFilters).some(Boolean) ? urlFilters : filtersInitialState;
 

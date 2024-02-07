@@ -14,7 +14,7 @@ const UsersList: FC = () => {
 
   return isFetched ? (
     <>
-      <h2 className="font-bold text-lg mb-4">Users</h2>
+      <h2 className="font-bold text-lg mb-4 user-list-item">Users</h2>
       {
         isLoading
           ? <div className="w-full flex justify-center">

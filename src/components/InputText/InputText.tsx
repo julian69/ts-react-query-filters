@@ -7,13 +7,14 @@ interface InputTextProps {
 }
 
 const InputText: FC<InputTextProps> = ({ value, label, onChange }) => {
+  const id = label.split(' ').join().toLowerCase();
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => onChange(event.target.value);
 
   return (
     <div className="mr-5">
-      <label htmlFor={label} className="text-sm font-medium text-stone-600">{label}</label>
+      <label htmlFor={id} className="text-sm font-medium text-stone-600">{label}</label>
       <input
-        id={label}
+        id={id}
         type="text"
         value={value}
         onChange={handleChange}

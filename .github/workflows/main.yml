@@ -28,6 +28,12 @@ jobs:
       - name: Execute Unit tests
         run: npm run test
 
+      - name: Execute e2e tests
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm run dev
+
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
