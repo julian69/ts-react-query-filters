@@ -1,5 +1,4 @@
 import { FC, ReactElement } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import { render, RenderOptions } from '@testing-library/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
@@ -19,7 +18,7 @@ const AllProviders: FC<{ children: ReactElement }> = ({ children }) => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>{children}</BrowserRouter>
+      {children}
     </QueryClientProvider>
   );
 };
