@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
   ],
-  // base: '/ts-react-query-filters/',
+  base: '/ts-react-query-filters/',
   server: {
     port: 3000,
   },
